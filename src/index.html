@@ -1,76 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
-</head>
-<body>
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <ul class="links-container">
-      <li class="link-item active"><a href="#" class="link">home</a></li>
-      <li class="link-item"><a href="#" class="link">product</a></li>
-      <li class="link-item"><a href="#" class="link">about</a></li>
-      <li class="link-item"><a href="#" class="link">contact</a></li>
-    </ul>
-    <div class="user-interactions">
-      <div class="cart">
-        <img src="./image/cart.png" class="cart-icon" alt="cart">
-        <span class="cart-item-count">00</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <ul class="links-container">
+        <li class="link-item active"><a href="#" class="link">home</a></li>
+        <li class="link-item"><a href="#" class="link">product</a></li>
+        <li class="link-item"><a href="#" class="link">about</a></li>
+        <li class="link-item"><a href="#" class="link">contact</a></li>
+      </ul>
+      <div class="user-interactions">
+        <div class="cart">
+          <img src="./image/cart.png" class="cart-icon" alt="cart" />
+          <span class="cart-item-count">00</span>
+        </div>
+        <div class="user">
+          <img src="./image/user.png" alt="user" class="user-icon" />
+        </div>
       </div>
-      <div class="user">
-        <img src="./image/user.png" alt="user" class="user-icon">
+    </nav>
+    <!-- HEADER -->
+    <header class="header-section">
+      <h1 class="header-heading"><span>premium </span>quality</h1>
+    </header>
+    <!-- BEST SELLING PRODUCTS -->
+    <section class="best-selling-product-section">
+      <h1 class="section-title">best selling products</h1>
+      <div class="product-container">
+        <div class="product-card">
+          <img src="./image/product-1.png" alt="" class="product-img" />
+          <p class="product-name">lights &rarr;</p>
+        </div>
+        <div class="product-card">
+          <img src="./image/product-2.png" alt="" class="product-img" />
+          <p class="product-name">table &rarr;</p>
+        </div>
+        <div class="product-card">
+          <img src="./image/product-3.png" alt="" class="product-img" />
+          <p class="product-name">storage &rarr;</p>
+        </div>
+        <div class="product-card">
+          <img src="./image/product-4.png" alt="" class="product-img" />
+          <p class="product-name">sofas &rarr;</p>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- HEADER -->
-  <header class="header-section">
-    <h1 class="header-heading"><span>premium </span>quality</h1>
-  </header>
-  <!-- BEST SELLING PRODUCTS -->
-  <section class="best-selling-product-section">
-    <h1 class="section-title">best selling products</h1>
-    <div class="product-container">
-      <div class="product-card">
-        <img src="./image/product-1.png" alt="" class="product-img">
-        <p class="product-name">lights &rarr;</p>
+    </section>
+    <!-- MID SECTION -->
+    <section class="mid-section">
+      <div class="mid-section-item-container">
+        <img src="./image/bg-2.png" alt="" class="mid-section-bg" />
+        <div class="mid-section-info">
+          <h1 class="mid-section-title">
+            premium quality in <span>affordable</span> price
+          </h1>
+          <p class="mid-section-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non itaque
+            corrupti, reprehenderit porro recusandae culpa.
+          </p>
+        </div>
       </div>
-      <div class="product-card">
-        <img src="./image/product-2.png" alt="" class="product-img">
-        <p class="product-name">table &rarr;</p>
+    </section>
+    <!-- IMAGE COLLAGE SECTION -->
+    <section class="image-section">
+      <div class="image-section-collage">
+        <div class="image-section-collection">
+          <img
+            src="./image/poster-1.png"
+            alt=""
+            class="image-section-collection-img"
+          />
+          <img
+            src="./image/poster-2.png"
+            alt=""
+            class="image-section-collection-img"
+          />
+          <img
+            src="./image/poster-3.png"
+            alt=""
+            class="image-section-collection-img"
+          />
+        </div>
       </div>
-      <div class="product-card">
-        <img src="./image/product-3.png" alt="" class="product-img">
-        <p class="product-name">storage &rarr;</p>
+    </section>
+    <!-- REVIEW SECTION -->
+    <section class="review-section">
+      <h1 class="review-section-title">
+        what our <span>customers</span> says about us
+      </h1>
+      <div class="review-section-container">
+        <div class="review-section-card">
+          <div class="review-section-user-dp" data-rating="4.8">
+            <img src="./image/user 1.png" alt="" />
+          </div>
+          <h2 class="review-section-title">
+            best quality! more than my expectation!
+          </h2>
+          <p class="review-section-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem velit
+            adipisci iste facilis nisi minus.
+          </p>
+        </div>
+        <div class="review-section-card">
+          <div class="review-section-user-dp" data-rating="5.0">
+            <img src="./image/user 2.png" alt="" />
+          </div>
+          <h2 class="review-section-title">
+            on time delivery with best packaging
+          </h2>
+          <p class="review-section-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem velit
+            adipisci iste facilis nisi minus.
+          </p>
+        </div>
+        <div class="review-section-card">
+          <div class="review-section-user-dp" data-rating="4.9">
+            <img src="./image/user 3.png" alt="" />
+          </div>
+          <h2 class="review-section-title">very helpful customer support</h2>
+          <p class="review-section-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem velit
+            adipisci iste facilis nisi minus.
+          </p>
+        </div>
+        <div class="review-section-card">
+          <div class="review-section-user-dp" data-rating="4.5">
+            <img src="./image/user 4.png" alt="" />
+          </div>
+          <h2 class="review-section-title">
+            very easy to refund/return products
+          </h2>
+          <p class="review-section-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem velit
+            adipisci iste facilis nisi minus.
+          </p>
+        </div>
       </div>
-      <div class="product-card">
-        <img src="./image/product-4.png" alt="" class="product-img">
-        <p class="product-name">sofas &rarr;</p>
+    </section>
+    <!-- END SECTION -->
+    <section class="end-section">
+      <div class="end-section-item-container">
+        <img src="./image/bg-3.png" alt="" class="end-section-bg" />
+        <div class="end-section-info">
+          <h1 class="end-section-title">
+            order <span>now</span>
+          </h1>
+          <p class="end-section-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non itaque
+            corrupti, reprehenderit porro recusandae culpa.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- MID SECTION -->
-  <section class="mid-section">
-    <div class="mid-section-item-container">
-      <img src="./image/bg-2.png" alt="" class="mid-section-bg">
-      <div class="mid-section-info">
-        <h1 class="mid-section-title">premium quality in <span>affordable</span> price</h1>
-        <p class="mid-section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non itaque corrupti, reprehenderit porro recusandae culpa.</p>
-      </div>
-    </div>
-  </section>
-  <!-- IMAGE COLLAGE SECTION -->
-  <section class="image-section">
-    <div class="image-section-collage">
-      <div class="image-section-collection">
-        <img src="./image/poster-1.png" alt="" class="image-section-collection-img">
-        <img src="./image/poster-2.png" alt="" class="image-section-collection-img">
-        <img src="./image/poster-3.png" alt="" class="image-section-collection-img">
-      </div>
-    </div>
-  </section>
-  
-</body>
+    </section>
+  </body>
 </html>
