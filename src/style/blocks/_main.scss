@@ -49,11 +49,25 @@
   cursor: pointer;
 }
 
+.cart-icon, .user-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .cart-item-count {
   font-family: 'Lato', sans-serif;
   color: #d5be8b;
   padding: .5rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: #190c05;
+  position: absolute;
+  bottom: -1.2rem;
+  left: -1.2rem;
 }
+
+// HEADER
 
 .header-section {
   width: 100%;
@@ -70,8 +84,163 @@
   font-size: 8rem;
   color: #fff;
   text-transform: capitalize;
-  font-weight: 300;
+  font-weight: 600;
 }
+
 .header-heading span {
   color: #d5be8b;
 }
+
+// BEST SELLING PRODUCT
+
+.best-selling-product-section {
+  position: relative;
+  padding: 6rem 5vw;
+}
+
+.section-title {
+  text-transform: capitalize;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.product{
+  &-container{
+  display: flex;
+  justify-content: space-between;
+  }
+  &-card{
+    border: 1.5rem solid #d5be8b;
+    width: 30rem;
+    height: 30rem;
+    overflow: hidden;
+    position: relative;
+    background: #d5be8b;
+    cursor: pointer;
+    &:nth-child(even){
+      border-color: #190c05;
+      background-color: #190c05;
+    }
+  }
+  &-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+  }
+  &-name{
+    position: absolute;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s;
+  }
+}
+
+.product-card:hover .product-name{
+  opacity: 1;
+}
+
+.product-card:hover .product-img{
+  opacity: .5;
+}
+
+// MID SECTION
+
+.mid-section{
+  width: 100%;
+  height: 80rem;
+  padding: 4rem 5vw;
+  &-item-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 2rem;
+  }
+  &-bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &-info{
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    display: block;
+    margin-left: auto;
+    padding: 5rem;
+    text-align: center;
+    opacity: .8;
+  }
+  &-title{
+    font-size: 6rem;
+    line-height: 10rem;
+    font-weight: 600;
+    span{
+      color: #d5be8b;
+    }
+  }
+  &-text{
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+    margin-top: 3rem;
+    opacity: 0.5;
+  }
+}
+
+// IMAGE COLLAGE
+
+.image-section{
+  width: 100%;
+  height: 60rem;
+  padding: 5rem 5vw;
+  &-collage{
+    width: 100%;
+    height: 100%;
+    background: url(./image/bg-1.png);
+    background-size: cover;
+  }
+  &-collection{
+    position: relative;
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    margin: auto;
+    &-img{
+      position: absolute;
+      object-fit: cover;
+      cursor: pointer;
+      transition: .5s;
+      &:nth-child(1){
+        width: 35rem;
+        height: 35rem;
+        top: 2rem;
+        left: 4rem;
+      }
+      &:nth-child(2){
+        width: 25rem;
+        height: 25rem;
+        top: 20rem;
+        left: 20rem;
+      }
+      &:nth-child(3){
+        width: 25rem;
+        height: 25rem;
+        top: 10rem;
+        left: 35rem;
+      }
+    }
+  };
+  
+}
+
