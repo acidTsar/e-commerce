@@ -3,6 +3,7 @@ import "./search.html";
 import "./product.html";
 import "./404.html";
 import "./signup.html"
+import "./login.html"
 import "./index.scss";
 
 const navbar = document.querySelector('.navbar');
@@ -73,13 +74,25 @@ const formBtn = document.querySelector('.form-btn')
 const loader = document.querySelector('.loader')
 
 formBtn.addEventListener('click', () => {
-  const fullName = document.querySelector('#name')
+  const fullName = document.querySelector('#name') || null
   const email = document.querySelector('#email')
   const password = document.querySelector('#password')
-  const number = document.querySelector('#number')
-  const tc = document.querySelector('#tc')
+  const number = document.querySelector('#number') || null
+  const tc = document.querySelector('#tc') || null
 
-  if(fullName.value.length < 3){
-    showFormError('Name must be minimum 3 letters long!')
-  }
+  if(fullName != null){
+    showFormError('Name must be minimum 3 letters long!');
+  } else if(!email.value.length){
+    showFormError('enter your email');
+  } else if(password.value.length < 8){
+    showFormError('Password must be minimum 8 symbols long!');
+  } else if(Number(number) || number.value.length < 10){
+    showFormError('Invalid number, please enter valid one');
+  } else if(!tc.checked){
+    showFormError('you must agree to our terms and conditions')
+  } else {
+    if(!email.value.length || !password.value.length){
+      showFormError('fill all inputs!')
+    }
+  } 
 })
